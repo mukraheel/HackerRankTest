@@ -19,23 +19,35 @@ public class LoginPage {
 	@FindBy(xpath="//*[@id=\"gnav-header-inner\"]/div[4]/nav/ul/li[1]/button")
 	WebElement loginlink;
 	
+	@FindBy(xpath="//*[@id=\"join-neu-form\"]/div[1]/div/div[1]/div/button")
+	WebElement Reglink;
+	
+	
 	@FindBy(id="join_neu_email_field")
-	WebElement txtusername;
+	WebElement txtEmailaddress;
+	
+	@FindBy(id="join_neu_first_name_field")
+	WebElement txtFirstname;
 	
 	@FindBy(id="join_neu_password_field")
-	WebElement txtpassword;
+	WebElement txtPassword ;
 	
 	@FindBy(name="submit_attempt")
 	WebElement btnLogin;
 	
-	public void setUserName(String username)
+	public void setEmailaddress(String username)
 	{
-		txtusername.sendKeys(username);
+		txtEmailaddress.sendKeys(username);
+	}
+	
+	public void setFirstname(String username)
+	{
+		txtFirstname.sendKeys(username);
 	}
 	
 	public void setPasswoard(String userPass)
 	{
-		txtpassword.sendKeys(userPass);
+		txtPassword.sendKeys(userPass);
 	}
 	
 	public void clickBtn()
@@ -46,5 +58,10 @@ public class LoginPage {
 	public void loginlink()
 	{
 		loginlink.click();
+	}
+	
+	public void Reglink()
+	{
+		Reglink.click();
 	}
 }

@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import Com.HackerRankTest.DataProviderFactory.DataProviderFactory;
 import com.github.javafaker.Faker;
 
 import Com.HackerRankTest.PageObject.LoginPage;
@@ -61,7 +62,7 @@ public class LoginTest extends BaseClass {
 		LoginPage lp = new LoginPage(driver,url);
 		
 		lp.loginlink();
-		lp.setUserName(UserName);
+		lp.setUserName(DataProviderFactory.getRandomDataProperty().getValue("Firstname"));
 		lp.setPasswoard(Passwoard);
 		lp.clickBtn();
 		
