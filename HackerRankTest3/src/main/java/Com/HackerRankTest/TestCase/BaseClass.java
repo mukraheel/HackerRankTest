@@ -84,8 +84,7 @@ ReadConfig objReadConfig = new ReadConfig();
 	@BeforeMethod
 	public void Setup()
 	{
-		logger = Logger.getLogger("Hacker Rank Test");
-		PropertyConfigurator.configure("log4j.properties");
+		
 		System.out.println("BeforeMethod()");
 		
 		

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="69840" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:17:24 PKT">
+  <suite name="Test Suite" duration-ms="13656" started-at="2020-05-21T18:15:46 PKT" finished-at="2020-05-21T18:16:00 PKT">
     <groups>
     </groups>
-    <test name="LoginCase" duration-ms="69840" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:17:24 PKT">
+    <test name="LoginCase" duration-ms="13656" started-at="2020-05-21T18:15:46 PKT" finished-at="2020-05-21T18:16:00 PKT">
       <class name="Com.HackerRankTest.TestCase.LoginTest">
-        <test-method status="PASS" signature="testBeforeSuite()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="testBeforeSuite" is-config="true" duration-ms="37" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:16:14 PKT">
+        <test-method status="PASS" signature="testBeforeSuite()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="testBeforeSuite" is-config="true" duration-ms="18" started-at="2020-05-21T18:15:46 PKT" finished-at="2020-05-21T18:15:46 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeSuite -->
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="setExtent" is-config="true" duration-ms="1" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:16:14 PKT">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="setExtent" is-config="true" duration-ms="1" started-at="2020-05-21T18:15:46 PKT" finished-at="2020-05-21T18:15:46 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="setup" is-config="true" duration-ms="69519" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:17:24 PKT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="setup" is-config="true" duration-ms="10081" started-at="2020-05-21T18:15:46 PKT" finished-at="2020-05-21T18:15:56 PKT">
           <params>
             <param index="0">
               <value>
@@ -26,28 +26,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="loginTest(java.lang.String)[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="loginTest" duration-ms="0" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
-          <exception class="org.testng.TestNGException">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="Setup" is-config="true" duration-ms="0" started-at="2020-05-21T18:15:56 PKT" finished-at="2020-05-21T18:15:56 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="loginTest" duration-ms="2436" started-at="2020-05-21T18:15:56 PKT" finished-at="2020-05-21T18:15:59 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="tearDown" is-config="true" duration-ms="1054" started-at="2020-05-21T18:15:59 PKT" finished-at="2020-05-21T18:16:00 PKT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="tearDown" is-config="true" duration-ms="18" started-at="2020-05-21T18:16:00 PKT" finished-at="2020-05-21T18:16:00 PKT">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [loginTest] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-U6EFAKA', ip: '192.168.55.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [loginTest] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
-at org.testng.internal.Parameters.createParameters(Parameters.java:729)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-U6EFAKA', ip: '192.168.55.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at Com.HackerRankTest.TestCase.BaseClass.tearDown(BaseClass.java:108)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
 at java.util.ArrayList.forEach(ArrayList.java:1257)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
@@ -66,19 +92,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="tearDown" is-config="true" duration-ms="205" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="AfterTest" is-config="true" duration-ms="1" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="AfterTest" is-config="true" duration-ms="2" started-at="2020-05-21T18:16:00 PKT" finished-at="2020-05-21T18:16:00 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterTest -->
-        <test-method status="PASS" signature="testAfterSuite()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="testAfterSuite" is-config="true" duration-ms="1" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
+        <test-method status="PASS" signature="testAfterSuite()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="testAfterSuite" is-config="true" duration-ms="1" started-at="2020-05-21T18:16:00 PKT" finished-at="2020-05-21T18:16:00 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAfterSuite -->

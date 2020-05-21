@@ -1,5 +1,8 @@
 package Com.HackerRankTest.PageObject;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,18 +10,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	
-	WebDriver lwebdrive;
 	
-	public LoginPage(WebDriver rdriver, String Url)
+	WebDriver driver;
+	
+	public LoginPage(WebDriver driver)
 	{
-		lwebdrive = rdriver;
-		lwebdrive.get(Url);
-		PageFactory.initElements(rdriver, this);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+		
 	}
-
-	@FindBy(xpath="//*[@id=\"gnav-header-inner\"]/div[4]/nav/ul/li[1]/button")
-	WebElement loginlink;
-	
+    
 	@FindBy(xpath="//*[@id=\"join-neu-form\"]/div[1]/div/div[1]/div/button")
 	WebElement Reglink;
 	
@@ -57,11 +58,13 @@ public class LoginPage {
 	
 	public void loginlink()
 	{
-		loginlink.click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//*[@id=\"gnav-header-inner\"]/div[4]/nav/ul/li[1]/button")).click();;
 	}
 	
 	public void Reglink()
 	{
+		
 		Reglink.click();
 	}
 }
