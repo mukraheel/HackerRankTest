@@ -40,8 +40,7 @@ ReadConfig objReadConfig = new ReadConfig();
 	
 	
 	public String Url = objReadConfig.geturl();
-	public String UserName = objReadConfig.getusername();
-	public String Passwoard = objReadConfig.getpasswoard();
+
 	
 	public static WebDriver driver;
 	public static Logger logger;

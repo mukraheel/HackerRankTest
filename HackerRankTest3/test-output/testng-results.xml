@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Suite" duration-ms="69840" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:17:24 PKT">
+    <groups>
+    </groups>
+    <test name="LoginCase" duration-ms="69840" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:17:24 PKT">
+      <class name="Com.HackerRankTest.TestCase.LoginTest">
+        <test-method status="PASS" signature="testBeforeSuite()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="testBeforeSuite" is-config="true" duration-ms="37" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:16:14 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeSuite -->
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="setExtent" is-config="true" duration-ms="1" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:16:14 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="setup" is-config="true" duration-ms="69519" started-at="2020-05-21T17:16:14 PKT" finished-at="2020-05-21T17:17:24 PKT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginTest(java.lang.String)[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="loginTest" duration-ms="0" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [loginTest] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [loginTest] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:458)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:372)
+at org.testng.internal.Parameters.createParameters(Parameters.java:729)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="tearDown" is-config="true" duration-ms="205" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="AfterTest" is-config="true" duration-ms="1" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="testAfterSuite()[pri:0, instance:Com.HackerRankTest.TestCase.LoginTest@4493d195]" name="testAfterSuite" is-config="true" duration-ms="1" started-at="2020-05-21T17:17:24 PKT" finished-at="2020-05-21T17:17:24 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAfterSuite -->
+      </class> <!-- Com.HackerRankTest.TestCase.LoginTest -->
+    </test> <!-- LoginCase -->
+  </suite> <!-- Test Suite -->
+</testng-results>
