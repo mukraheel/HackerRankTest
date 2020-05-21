@@ -51,7 +51,7 @@ public class LoginTest extends BaseClass {
 
 	}
 	
-	@Parameters({ "url1" })
+	
 	@Test
 	public void loginTest(String url) throws IOException
 	{
