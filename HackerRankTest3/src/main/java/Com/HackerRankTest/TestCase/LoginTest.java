@@ -18,7 +18,7 @@ import Com.HackerRankTest.PageObject.LoginPage;
 
 public class LoginTest extends BaseClass {
 	
-	public void updateproFile(String value, String Case, String status) throws IOException {
+	public void updateproFile() throws IOException {
 
 		// create object of faker which was added into POM.xml
 		Faker faker = new Faker();
@@ -53,17 +53,21 @@ public class LoginTest extends BaseClass {
 	
 	@Parameters({ "url1" })
 	@Test
-	public void loginTest(String url)
+	public void loginTest(String url) throws IOException
 	{
 		
+		// call method for generate random  data 
+		updateproFile();
 		
 		logger.info("URL is hit");
 		
 		LoginPage lp = new LoginPage(driver,url);
 		
 		lp.loginlink();
-		lp.setUserName(DataProviderFactory.getRandomDataProperty().getValue("Firstname"));
-		lp.setPasswoard(Passwoard);
+		lp.Reglink();
+		lp.setEmailaddress(DataProviderFactory.getRandomDataProperty().getValue("Emailaddress"));
+		lp.setFirstname(DataProviderFactory.getRandomDataProperty().getValue("Firstname"));
+		lp.setPasswoard(DataProviderFactory.getRandomDataProperty().getValue("Password"));
 		lp.clickBtn();
 		
 		logger.info("Click on Submit Button");
