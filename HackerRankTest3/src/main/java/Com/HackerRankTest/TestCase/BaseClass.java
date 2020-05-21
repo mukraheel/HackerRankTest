@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -73,5 +75,17 @@ ReadConfig objReadConfig = new ReadConfig();
 		System.out.println("BeforeMethod()");
 		
 		
+	}
+	
+	@AfterTest
+	public void AfterTest()
+	{
+		System.out.println("AfterTest()");
+		
+	}
+
+	@AfterSuite
+	public void testAfterSuite() {
+		System.out.println("AfterSuite()");
 	}
 }
